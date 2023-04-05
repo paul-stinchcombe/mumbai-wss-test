@@ -76,7 +76,7 @@ function listenTo721(subscription721) {
               : transaction.from
           }\n` +
           `To: ${transaction.to}\n` +
-          ```Token contract: ${event.address}\n` +
+          `Token contract: ${event.address}\n` +
           `Token ID: ${transaction.tokenId}`,
       )
     }
