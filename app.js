@@ -1,9 +1,9 @@
 const Web3 = require('web3')
 
-// const WSS_Link =
-// 'wss://polygon-testnet.blastapi.io/f377cfe7-e769-4d72-9cd6-30bedb3744e9'
 const WSS_Link =
-  'wss://snowy-winter-voice.matic-testnet.discover.quiknode.pro/bef327d1b16299005bcedf6aa56a023f0b3c1982'
+  'wss://polygon-testnet.blastapi.io/f377cfe7-e769-4d72-9cd6-30bedb3744e9'
+// const WSS_Link =
+//   'wss://snowy-winter-voice.matic-testnet.discover.quiknode.pro/bef327d1b16299005bcedf6aa56a023f0b3c1982'
 
 const web3 = new Web3(WSS_Link)
 
@@ -76,7 +76,7 @@ function listenTo721(subscription721) {
               : transaction.from
           }\n` +
           `To: ${transaction.to}\n` +
-          `Token contract: ${event.address}\n` +
+          ```Token contract: ${event.address}\n` +
           `Token ID: ${transaction.tokenId}`,
       )
     }
