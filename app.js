@@ -1,7 +1,9 @@
 const Web3 = require('web3')
 
+// const WSS_Link =
+// 'wss://polygon-testnet.blastapi.io/f377cfe7-e769-4d72-9cd6-30bedb3744e9'
 const WSS_Link =
-  'wss://polygon-testnet.blastapi.io/f377cfe7-e769-4d72-9cd6-30bedb3744e9'
+  'wss://snowy-winter-voice.matic-testnet.discover.quiknode.pro/bef327d1b16299005bcedf6aa56a023f0b3c1982'
 
 const web3 = new Web3(WSS_Link)
 
@@ -67,7 +69,7 @@ function listenTo721(subscription721) {
       )
       console.log(
         `\n` +
-          `New ERC-712 transaction found in block ${event.blockNumber} with hash ${event.transactionHash}\n` +
+          `New ERC-721 transaction found in block ${event.blockNumber} with hash ${event.transactionHash}\n` +
           `From: ${
             transaction.from === '0x0000000000000000000000000000000000000000'
               ? 'New mint!'
